@@ -98,13 +98,13 @@ const Banner = () => {
                             key={index}
                             className="item"
                             style={{
-                                background: `linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.15738795518207283) 100%, rgba(0,212,255,1) 100%), url(${slide.image})`,
+                                background: `linear-gradient(90deg, rgba(0,0,0,0.1293767507002801) 0%, rgba(0,0,0,0.8996848739495799) 0%, rgba(0,0,0,0.07055322128851538) 100%), url(${slide.image})`,
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}
                         >
                             <div className="content">
-                                <div className="title text-blue-700">CITY DENTAL</div>
+                                <div className="title text-blue-500">CITY DENTAL</div>
                                 <div className="text-xl my-5 flex items-center gap-2">{slide.name} <FaTooth /></div>
                                 <div className="des">
                                     Caring for your smile with professional expertise, advanced techniques, and a friendly patient experience.
