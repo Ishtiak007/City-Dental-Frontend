@@ -8,8 +8,9 @@ import image5 from '../../../assets/images/dental5.jpg'
 import image6 from '../../../assets/images/dental6.jpg'
 import image7 from '../../../assets/images/dental7.jpg'
 import '../Banner/Banner.css';
-import { FaArrowAltCircleLeft } from "react-icons/fa";
-import { FaArrowAltCircleRight } from "react-icons/fa";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import { FaTooth } from "react-icons/fa";
 
 
 const Banner = () => {
@@ -79,13 +80,13 @@ const Banner = () => {
     }, []);
 
     const slides = [
-        { image: image1, name: 'COMPREHENSIVE CARE FOR EVERY SMILE' },
-        { image: image2, name: 'YOUR PARTNER IN ORAL HEALTH' },
-        { image: image3, name: 'BEAUTIFUL SMILES, HEALTHY TEETH' },
-        { image: image4, name: 'MODERN DENTISTRY FOR THE WHOLE FAMILY' },
-        { image: image5, name: 'EXCELLENCE IN DENTAL HEALTH' },
-        { image: image6, name: 'WHERE YOUR SMILE SHINES' },
-        { image: image7, name: 'YOUR TRUSTED SMILE SPECIALISTS' },
+        { image: image1, name: 'WHERE SMILES FEEL GREAT' },
+        { image: image2, name: 'FOCUSED ON YOUR SMILE' },
+        { image: image3, name: 'EXCELLENCE IN ORAL HEALTH' },
+        { image: image4, name: 'HEALTHY TEETH, HAPPY SMILES' },
+        { image: image5, name: 'CARING DENTISTRY FOR ALL' },
+        { image: image6, name: 'BRIGHT SMILES, HEALTHY LIVES' },
+        { image: image7, name: 'YOUR TRUSTED DENTAL EXPERTS' },
     ];
 
     return (
@@ -104,11 +105,9 @@ const Banner = () => {
                         >
                             <div className="content">
                                 <div className="title text-blue-700">CITY DENTAL</div>
-                                <div className="text-3xl">{slide.name}</div>
+                                <div className="text-xl my-5 flex items-center gap-2">{slide.name} <FaTooth /></div>
                                 <div className="des">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Officiis culpa similique consequuntur, reprehenderit dicta
-                                    repudiandae.
+                                    Caring for your smile with professional expertise, advanced techniques, and a friendly patient experience.
                                 </div>
                                 <div className="btn-subscribe">
                                     <button>Register Now</button>
@@ -121,8 +120,8 @@ const Banner = () => {
 
                 {/* Next and Previous buttons */}
                 <div className="arrows">
-                    <button className="prev flex justify-center items-center"><FaArrowAltCircleLeft /></button>
-                    <button className="next flex justify-center items-center" ref={nextBtnRef}><FaArrowAltCircleRight /></button>
+                    <button className="prev flex justify-center items-center"><IoIosArrowBack /></button>
+                    <button className="next flex justify-center items-center" ref={nextBtnRef}><IoIosArrowForward /></button>
                 </div>
 
                 {/* Time running indicator */}
