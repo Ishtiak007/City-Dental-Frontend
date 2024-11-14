@@ -34,10 +34,10 @@ a.active {
   border-radius: 2px;
 }
 
-a:hover {
+/* a:hover {
   background: #14ff72cb;
   border-radius: 2px;
-}
+} */
 
 /* Header section */
 
@@ -164,15 +164,15 @@ a:hover {
 
 .content .btn-subscribe button:nth-child(2) {
   background: transparent;
-  color: #14ff72cb;
+  color: #4e7dff;
   border: 2px solid #fff;
   transition: 0.3s;
 }
 
-.content .btn-subscribe button:nth-child(2):hover {
-  background-color: #14ff72cb;
-  color: #fff;
-  border-color: #14ff72cb;
+.content .btn-subscribe button:hover {
+  background-color: white;
+  color: black;
+  border-color: blue;
 }
 
 @keyframes animate {

@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.buttonProject {
+  padding: 7px 15px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+  border: 1px solid rgba(118, 118, 252, 0.688);
+}
+.buttonProject:hover {
+  color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(172, 255, 47, 0.379);
+}

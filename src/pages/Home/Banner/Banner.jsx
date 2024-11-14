@@ -111,7 +111,7 @@ const Banner = () => {
                                     repudiandae.
                                 </div>
                                 <div className="btn-subscribe">
-                                    <button>See More</button>
+                                    <button>Register Now</button>
                                     <button>Subscribe</button>
                                 </div>
                             </div>

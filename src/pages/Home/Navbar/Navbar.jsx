@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
 
     const navLinks = <>
-        <li><Link className='font-semibold text-white' to='/'>About</Link></li>
-        <li><Link className='font-semibold text-white' to='/'>Our Services</Link></li>
-        <li><Link className='font-semibold text-white' to='/'>Blog</Link></li>
-        <li><Link className='font-semibold text-white' to='/'>Gallery</Link></li>
-        <li><Link className='font-semibold text-white' to='/login'>FAQ</Link></li>
+        <li><Link className='font-medium text-white' to='/'>About</Link></li>
+        <li><Link className='font-medium text-white' to='/'>Our Services</Link></li>
+        <li><Link className='font-medium text-white' to='/'>Blog</Link></li>
+        <li><Link className='font-medium text-white' to='/'>Contact</Link></li>
+        <li><Link className='font-medium text-white' to='/'>Gallery</Link></li>
+        <li><Link className='font-medium text-white' to='/login'>FAQ</Link></li>
 
     </>
 
@@ -33,8 +34,8 @@ const Navbar = () => {
             <div className="navbar-end">
 
                 <div>
-                    <Link className='font-semibold text-white' to='/dashboard/cart'>
-                        <button className="">
+                    <Link className='text-white font-medium'>
+                        <button className="buttonProject">
                             Request For Appointment
                         </button>
                     </Link>
