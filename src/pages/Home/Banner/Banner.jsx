@@ -7,7 +7,7 @@ import image4 from '../../../assets/images/dental4.jpg'
 import image5 from '../../../assets/images/dental5.jpg'
 import image6 from '../../../assets/images/dental6.jpg'
 import image7 from '../../../assets/images/dental7.jpg'
-import '../Carousel/Carousel.css';
+import '../Banner/Banner.css';
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
@@ -103,8 +103,8 @@ const Banner = () => {
                             }}
                         >
                             <div className="content">
-                                <div className="title">SLIDER</div>
-                                <div className="name">{slide.name}</div>
+                                <div className="title text-blue-700">CITY DENTAL</div>
+                                <div className="text-3xl">{slide.name}</div>
                                 <div className="des">
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                     Officiis culpa similique consequuntur, reprehenderit dicta
