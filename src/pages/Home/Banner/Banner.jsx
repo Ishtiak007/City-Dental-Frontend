@@ -105,7 +105,7 @@ const Banner = () => {
                         >
                             <div className="content">
                                 <div className="title text-blue-500">CITY DENTAL</div>
-                                <div className="text-xl my-5 flex items-center gap-2">{slide.name} <FaTooth /></div>
+                                <div className="text-xl my-5 flex items-center gap-2 name">{slide.name} <FaTooth /></div>
                                 <div className="des">
                                     Caring for your smile with professional expertise, advanced techniques, and a friendly patient experience.
                                 </div>
