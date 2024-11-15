@@ -15,8 +15,10 @@
     "@stripe/stripe-js": "^3.4.0",
     "@tanstack/react-query": "^5.36.0",
     "axios": "^1.6.8",
+    "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "firebase": "^10.11.1",
+    "framer-motion": "^11.11.17",
     "prop-types": "^15.8.1",
     "query-string": "^9.0.0",
     "react": "^18.2.0",
@@ -27,7 +29,8 @@
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.23.1",
-    "react-spinners": "^0.13.8"
+    "react-spinners": "^0.13.8",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
