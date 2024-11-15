@@ -20,7 +20,7 @@ const Banner = () => {
     const nextBtnRef = useRef(null);
 
     const timeRunning = 3000;
-    const timeAutoNext = 4000;
+    const timeAutoNext = 4500;
 
     let runTimeOut;
     let runNextAuto;
@@ -56,7 +56,7 @@ const Banner = () => {
             if (runningTimeRef.current) {
                 runningTimeRef.current.style.animation = 'none';
                 runningTimeRef.current.offsetHeight; /* trigger reflow */
-                runningTimeRef.current.style.animation = 'runningTime 4s linear 1 forwards';
+                runningTimeRef.current.style.animation = 'runningTime 4.5s linear 1 forwards';
             }
         };
 
@@ -111,7 +111,7 @@ const Banner = () => {
                                 </div>
                                 <div className="btn-subscribe">
                                     <button>Register Now</button>
-                                    <button>Subscribe</button>
+                                    <button>Contact Now</button>
                                 </div>
                             </div>
                         </div>

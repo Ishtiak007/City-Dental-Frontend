@@ -18,3 +18,26 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(172, 255, 47, 0.379);
 }
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links li::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #3b82f6;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links li:hover::after {
+  width: 100%;
+}

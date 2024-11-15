@@ -1,17 +1,17 @@
 import { FaBars } from "react-icons/fa";
-import logo from '../../../../public/TitleLogo-png.png'
+import logo from "../../../assets/images/TitleLogo-png.png"
 import { Link } from "react-router-dom";
 const Navbar = () => {
 
-    const navLinks = <>
+    const navLinks = <div className="nav-links">
         <li><Link className='font-medium text-white' to='/'>About</Link></li>
-        <li><Link className='font-medium text-white' to='/'>Our Services</Link></li>
+        <li><Link className='font-medium text-white' to='/'>Service</Link></li>
         <li><Link className='font-medium text-white' to='/'>Blog</Link></li>
         <li><Link className='font-medium text-white' to='/'>Contact</Link></li>
         <li><Link className='font-medium text-white' to='/'>Gallery</Link></li>
         <li><Link className='font-medium text-white' to='/login'>FAQ</Link></li>
 
-    </>
+    </div>
 
     return (
         <div className="navbar fixed z-10 bg-opacity-30 bg-black text-white px-4">
