@@ -90,7 +90,13 @@ const Banner = () => {
                 transition={{ duration: 3, ease: "easeOut" }}
               >
                 {/* Simple Light Blue Gradient Overlay */}
-                <div className="absolute inset-0 bg-zinc-900 opacity-45"></div>
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2))",
+                  }}
+                ></div>
 
                 {/* Centering Wrapper */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center lg:ml-40 px-5 max-w-3xl">
@@ -104,7 +110,7 @@ const Banner = () => {
                       </p>
                     </div>
                     <h2
-                      className="text-white font-semibold text-2xl sm:text-3xl md:text-4xl pb-4 sm:pb-6"
+                      className="text-white font-semibold text-3xl uppercase sm:text-3xl md:text-4xl pb-4 sm:pb-6"
                       data-aos="fade-left"
                     >
                       {d.heading}
@@ -119,10 +125,10 @@ const Banner = () => {
                     </p>
                     <button
                       type="button"
-                      className="text-white bg-gradient-to-r from-blue-300 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-md px-5 py-1.5 text-center me-2 mb-2 text-[16px] sm:text-[18px] my-3"
-                      data-aos="flip-left"
+                      className="text-white bg-gradient-to-b from-blue-600 via-blue-700 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  font-medium rounded-full text-md px-5 py-1.5 text-center me-2 mb-2 text-[15px] my-3 cursor-pointer"
+                      data-aos="flip-right"
                     >
-                      Learn more
+                      Register Now
                     </button>
                   </div>
                 </div>

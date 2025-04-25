@@ -65,7 +65,7 @@ const Navbar = () => {
 
         <div className="navbar-end">
           <Link href={"/"} className="text-white font-medium">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
+            <button className="text-white bg-gradient-to-b from-blue-600 via-blue-700 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none shadow-lg  font-medium rounded-full text-md px-5 py-1.5 text-center me-2 mb-2 text-[15px] my-3 cursor-pointer">
               Request For Appointment
             </button>
           </Link>
