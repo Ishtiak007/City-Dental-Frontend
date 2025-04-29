@@ -8,6 +8,8 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/moving-border";
+import Link from "next/link";
 
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -73,7 +75,7 @@ const Banner = () => {
           modules={[Navigation, Autoplay, EffectFade]}
           spaceBetween={30}
           slidesPerView={1}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 10000, disableOnInteraction: false }}
           effect="fade"
           fadeEffect={{ crossFade: true }}
           speed={1000}
@@ -94,7 +96,7 @@ const Banner = () => {
                   className="absolute inset-0"
                   style={{
                     background:
-                      "linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2))",
+                      "linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3))",
                   }}
                 ></div>
 
@@ -123,13 +125,14 @@ const Banner = () => {
                     >
                       {d.desc}
                     </p>
-                    <button
-                      type="button"
-                      className="text-white bg-gradient-to-b from-blue-600 via-blue-700 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  font-medium rounded-full text-md px-5 py-1.5 text-center me-2 mb-2 text-[15px] my-3 cursor-pointer"
-                      data-aos="flip-right"
-                    >
-                      Register Now
-                    </button>
+                    <Link href={"/register"}>
+                      <Button
+                        className="py-2 px-1 cursor-pointer"
+                        data-aos="flip-right"
+                      >
+                        Register Now
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
